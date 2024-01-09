@@ -22,8 +22,8 @@ h1 {
 /* Catalog Name*/
 h2 {
   font-weight: 700;
-  font-size: 25px;
-  line-height: 28px;
+  font-size: 35px;
+  line-height: 30px;
   color: white;
   font-style: normal;
   text-transform: uppercase;
@@ -158,50 +158,88 @@ button {
 
   /* API CALLS CSS */
 
- #product-list {
-  margin: 250px 150px;
-  position: absolute;
-  top: 0px;
-}
 
- #product-list img{
-  width: 250px;
-  height: 350px;
-  border-radius: 6px;
- }
 
- #product-list div {
-    display: inline-block;
-    margin: 30px 15px;
- }
-
- #product-list a {
-  text-decoration: none;
+ /* Game item */
+.box h2{
+  padding-top: 250px;
   font-size: 30px;
-  color: #E55B13;
- }
-
- #product-list p {
-  font-size: 12px;
-  width: 450px;
-  margin: 5px 0px;
-  font: 200;
-  letter-spacing: 0.2px;
- }
-
- #product-list h2{
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  color:#FFFFFF;
-  letter-spacing: 2px;
+  line-height: 100px;
+  padding-left: 160px;
+}
+.game-row {
+  margin: 10px 150px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+}
+.game-row-recommended {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+gap: 10px;
+}
+.game-row-trending {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+gap: 10px;
+}
+.game-item {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+.game-item:hover {
+transition: all .2s ease-in-out; 
+transform: scale(1.05);
+}
+.game-item img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
-#product-list2 a:hover{
+.game-item p {
   color: #FFFFFF;
-  transition: 0.2s ease;
-  font-weight: bolder;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+
 }
+
+.game-description {
+  background: linear-gradient(180deg, rgba(229, 91, 19, 0.70) 0%, rgba(229, 91, 19, 0.61) 0.01%, rgba(229, 91, 19, 0.00) 100%);
+}
+
+.game-price {
+  display: flex;
+  font-size: 14px;
+  gap: 20px;
+  background: linear-gradient(180deg, rgba(229, 91, 19, 0.00) 0%, rgba(229, 91, 19, 0.61) 99.99%, rgba(229, 91, 19, 0.70) 100%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  justify-content: center;
+  color: white;
+}    
+.old-price {
+color:#CACBF1;
+font-size: 12px;
+text-decoration: line-through;
+}
+
 
 
 /* Downbar starts here */
@@ -301,14 +339,6 @@ footer strong {
     top: 2800px;
   }
 
-  #product-list {
-    margin: 210px 0px;
-  }
-
-  #product-list div {
-    margin: 30px 11px;
- }
-
 
 }
 
@@ -322,13 +352,6 @@ footer strong {
       top: 2800px;
     }
 
-    #product-list {
-      margin: 210px 0px;
-    }
-  
-    #product-list div {
-      margin: 30px 11px;
-   }
 
 
 }
@@ -339,32 +362,7 @@ footer strong {
     padding: 20px 40px;
    }
 
-   #product-list {
-    margin: 250px 10px;
-  }
   
-   #product-list img{
-    width: 200px;
-    height: 300px;
-   }
-  
-   #product-list div {
-      margin: 30px 10px;
-   }
-  
-   #product-list a {
-    font-size: 25px;
-   }
-  
-   #product-list p {
-    font-size: 12px;
-    width: 350px;
-    margin: 5px 0px;
-   }
-  
-   #product-list h2{
-    font-size: 35px;
-  }
 
  footer {
   top: 2800px;
@@ -388,36 +386,28 @@ footer strong {
     padding: 20px 40px; 
   }
 
+  .box h2{
+    padding-top: 250px;
+    font-size: 28px;
+    line-height: 80px;
+    padding-left: 40px;
+  }
+
+  .game-row {
+    margin: 10px 50px;
+  }
+
+
+
+  footer {
+    top: 3800px;
+  }
+
 
 /* Products All Games Starts Here */
 
 
- #product-list {
-  margin: 250px 20px;
- }
 
- #product-list div {
-    margin: 30px 5px;
- }
-
- #product-list img{
-  width: 200px;
-  height: 280px;
- }
-
- #product-list a {
-  font-size: 25px;
- }
-
- #product-list p {
-  font-size: 12px;
-  width: 350px;
-  margin: 5px 0px;
- }
-
- #product-list h2{
-  font-size: 30px;
-}
 
 
   /* footer starst here */
@@ -426,9 +416,6 @@ footer .logo {
   display: none;
 }
 
-footer {
-  top: 2500px;
-}
 
 footer .col{
   margin-bottom: 5px;
@@ -547,31 +534,7 @@ footer h5 {
   
 /* Products All Games Starts Here */
 
- #product-list {
-  margin: 200px 10px;
-  }
-
- #product-list div {
-   margin: 30px 10px;
- }
-
- #product-list img{
-  width: 200px;
-  height: 300px;
- }
-
- #product-list a {
-  font-size: 25px;
- }
-
- #product-list p {
-  font-size: 9px;
-  width: 340px;
- }
-
- #product-list h2 {
-  font-size: 40px; 
-}
+ 
 
   
 
@@ -581,9 +544,6 @@ footer .logo {
   display: none;
 }
 
-footer {
-  top: 2500px;
-}
 
 
 }
@@ -594,32 +554,7 @@ footer {
 
   /* Products All Games Starts Here */
 
-  #product-list {
-    margin: 200px 2px;
-    }
-  
-   #product-list div {
-     margin: 30px 15px;
-   }
-  
-   #product-list img{
-    width: 200px;
-    height: 280px;
-   }
-  
-   #product-list a {
-    font-size: 25px;
-   }
-  
-   #product-list p {
-    font-size: 9px;
-    width: 280px;
-   }
-  
-   #product-list h2 {
-    font-size: 35px; 
-  }
-
+ 
 
     /* footer starst here */
 
@@ -633,34 +568,10 @@ footer {
 
   /* Products All Games Starts Here */
 
-  #product-list {
-    margin: 200px 5px;
-    }
   
-   #product-list div {
-     margin: 20px 10px;
-   }
-  
-   #product-list img{
-    width: 150px;
-    height: 200px;
-   }
-  
-   #product-list a {
-    font-size: 18px;
-   }
-  
-   #product-list p {
-    font-size: 7px;
-    width: 200px;
-   }
-  
-   #product-list h2 {
-    font-size: 25px; 
-  }
 
   footer {
-    top: 1900px;
+    top: 4000px;
   }
 
 }
@@ -673,31 +584,7 @@ footer {
 
    /* Products All Games Starts Here */
 
- #product-list {
-  margin: 200px 15px;
-  }
-
- #product-list div {
-   margin: 30px 15px;
- }
-
- #product-list img{
-  width: 200px;
-  height: 300px;
- }
-
- #product-list a {
-  font-size: 25px;
- }
-
- #product-list p {
-  font-size: 9px;
-  width: 340px;
- }
-
- #product-list h2 {
-  font-size: 40px; 
-}
+ 
 
 
 
@@ -714,11 +601,7 @@ footer {
     padding: 2px 2px;
    }
 
-   #product-list img{
-    width: 150px;
-    height: 50px;
-    border-radius: 6px;
-   }
+  
 
 
     footer {

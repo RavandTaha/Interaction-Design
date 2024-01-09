@@ -209,44 +209,82 @@ body {
   cursor: pointer;
 }
 
-  /* product list */
 
-  #product-list2 {
-    margin: 300px 100px;
-    position: absolute;
-  }
-  
-   #product-list2 div {
-     display: inline-block;
-     margin: 20px 5px;
-   }
 
-   #product-list2 img{
-    width: 250px;
-    height: 350px;
-    border-radius: 6px;
-    cursor: none;
-    margin: 40px 10px;
-   }
-  
-   #product-list2 a {
-    text-decoration: none;
-    position: absolute;
-    color: #E55B13;
-    font-size: 23px;
-    margin: 0px 10px;
-   }
-  
-   #product-list2 h2{
-    font-size: 30px;
-    line-height: 40px;
-  }
+.box h2{
+  padding-top: 250px;
+  font-size: 30px;
+  line-height: 100px;
+  padding-left: 160px;
+}
+.game-row {
+  margin: 10px 150px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+}
 
-  #product-list2 a:hover{
-    color: #FFFFFF;
-    transition: 0.2s ease;
-    font-weight: bolder;
-  }
+.game-item {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+.game-item:hover {
+transition: all .2s ease-in-out; 
+transform: scale(1.05);
+}
+.game-item img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.game-item p {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+
+}
+
+.game-description {
+  background: linear-gradient(180deg, rgba(229, 91, 19, 0.70) 0%, rgba(229, 91, 19, 0.61) 0.01%, rgba(229, 91, 19, 0.00) 100%);
+}
+
+.game-price {
+  display: flex;
+  font-size: 14px;
+  gap: 20px;
+  background: linear-gradient(180deg, rgba(229, 91, 19, 0.00) 0%, rgba(229, 91, 19, 0.61) 99.99%, rgba(229, 91, 19, 0.70) 100%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  justify-content: center;
+  color: white;
+}    
+.old-price {
+color:#CACBF1;
+font-size: 12px;
+text-decoration: line-through;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+ 
 
 
 
@@ -255,7 +293,7 @@ body {
 #banner {
   margin: 10px 80px;
   position: absolute;
-  top: 1850px;
+  top: 1900px;
   display: flex;
 }
 
@@ -305,7 +343,7 @@ body {
 #catalog {
   margin: 10px 100px;
   position: absolute;
-  top: 2350px;
+  top: 2500px;
 }
 
 #catalog .te {
@@ -390,7 +428,7 @@ body {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 2800px;
+  top: 2850px;
   padding-left: 200px;
   height: 300px;
   width: 100%;
@@ -459,7 +497,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  top: 2640px;
+  top: 2400px;
   position: relative;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 19.27%, rgba(0, 0, 0, 0.3) 23.96%, rgba(0, 0, 0, 0.3) 29.17%, rgba(0, 0, 0, 0.3) 54.17%, rgba(229, 91, 19, 0.5) 100%);
 }
@@ -565,38 +603,14 @@ footer strong {
 
   /* product list */
 
-  #product-list2 {
-    margin: 250px 20px;
-  }
-  
-   #product-list2 div {
-     margin: 20px 12px;
-   }
-
-   #product-list2 img{
-    width: 200px;
-    height: 300px;
-    margin: 20px 10px;
-   }
-  
-   #product-list2 a {
-    font-size: 17px;
-    margin: 0px 12px;
-    line-height: 0px;
-   }
-  
-   #product-list2 h2{
-    font-size: 25px;
-    line-height: 40px;
-  }
-  
+ 
   
 
    /* Banner starts here */
 
    #banner {
     margin: 10px 50px;
-    top: 1700px;
+    top: 2300px;
     left: 120px;
   }
 
@@ -625,7 +639,7 @@ footer strong {
 
   #catalog {
     margin: 10px 50px;
-    top: 2150px;
+    top: 2800px;
   }
 
   #catalog .te {
@@ -665,7 +679,7 @@ footer strong {
 /* Newsletter starts here */
 
 #newsletter {
-  top: 2500px;
+  top: 3200px;
   padding-left: 100px;
   height: 300px;
 }
@@ -682,7 +696,7 @@ footer strong {
 /* Downbar starts here */
 
 footer {
-  top: 2384px;
+  top: 2800px;
 
   
 }
@@ -725,37 +739,28 @@ footer {
 
   /* product list starts here */
 
-  #product-list2 {
-    margin: 200px 25px;
+  .box h2{
+    padding-top: 250px;
+    font-size: 30px;
+    line-height: 100px;
+    padding-left: 100px;
+  }
+  .game-row {
+    margin: 10px 150px;
   }
   
-   #product-list2 div {
-     margin: 20px 15px;
-   }
-
-   #product-list2 img{
-    width: 150px;
-    height: 200px;
-    margin: 20px 10px;
-   }
-  
-   #product-list2 a {
-    font-size: 17px;
-    margin: 0px 12px;
-    line-height: 0px;
-   }
-  
-   #product-list2 h2{
-    font-size: 25px;
-    line-height: 40px;
+  .game-item {
+    width: 200px;
   }
   
 
+  
+  
   /* Banner starts here */
 
   #banner {
     margin: 10px 250px;
-    top: 1300px;
+    top: 2500px;
     left: 0;
   }
 
@@ -787,7 +792,7 @@ footer {
 #catalog {
   margin: 10px 270px;
   position: absolute;
-  top: 1900px;
+  top: 3000px;
 }
 
 #catalog .te {
@@ -837,7 +842,7 @@ footer {
 /* NewsLetter Starts Here */
 
 #newsletter {
-  top: 2600px;
+  top: 3500px;
   padding-left: 100px;
   height: 300px;
 }
@@ -855,7 +860,7 @@ footer {
 }
 
 footer {
-  top: 2547px;
+  top: 3100px;
 }
 
 }
@@ -893,29 +898,18 @@ footer {
 
   /* product list starts here */
 
-  #product-list2 {
-    margin: 250px 20px;
+  .box h2{
+    padding-top: 240px;
+    font-size: 30px;
+    line-height: 100px;
+    padding-left: 20px;
+  }
+  .game-row {
+    margin: 10px 20px;
   }
   
-   #product-list2 div {
-     margin: 20px 12px;
-   }
-
-   #product-list2 img{
-    width: 200px;
-    height: 300px;
-    margin: 20px 10px;
-   }
-  
-   #product-list2 a {
-    font-size: 17px;
-    margin: 0px 12px;
-    line-height: 0px;
-   }
-  
-   #product-list2 h2{
-    font-size: 25px;
-    line-height: 40px;
+  .game-item {
+    width: 180px;
   }
   
 
