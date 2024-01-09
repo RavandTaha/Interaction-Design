@@ -25,7 +25,6 @@ if (close) {
 }
 
 
-
 // Fetch data from the API for homepage pages
 fetch(apiUrl)
 .then((response) => response.json())
