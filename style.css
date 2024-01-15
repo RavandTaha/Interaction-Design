@@ -209,7 +209,7 @@ body {
   cursor: pointer;
 }
 
-
+ /* product starts here */
 
 .box h2{
   padding-top: 250px;
@@ -273,6 +273,7 @@ transform: scale(1.05);
   justify-content: center;
   color: white;
 }    
+
 .old-price {
 color:#CACBF1;
 font-size: 12px;
@@ -739,28 +740,13 @@ footer {
 
   /* product list starts here */
 
-  .box h2{
-    padding-top: 250px;
-    font-size: 30px;
-    line-height: 100px;
-    padding-left: 100px;
-  }
-  .game-row {
-    margin: 10px 150px;
-  }
-  
-  .game-item {
-    width: 200px;
-  }
-  
-
   
   
   /* Banner starts here */
 
   #banner {
-    margin: 10px 250px;
-    top: 2500px;
+    margin: 10px 150px;
+    top: 2200px;
     left: 0;
   }
 
@@ -790,9 +776,9 @@ footer {
 /* Explore Catalog Starts Here */
 
 #catalog {
-  margin: 10px 270px;
+  margin: 10px 170px;
   position: absolute;
-  top: 3000px;
+  top: 2900px;
 }
 
 #catalog .te {
@@ -917,7 +903,7 @@ footer {
 
   #banner {
     margin: 10px 120px;
-    top: 2300px;
+    top: 2000px;
     left: 0;
   }
 
@@ -949,7 +935,7 @@ footer {
 #catalog {
   margin: 10px 120px;
   position: absolute;
-  top: 2850px;
+  top: 2600px;
 }
 
 #catalog .te {
@@ -1092,7 +1078,7 @@ footer {
 
   #hero{
     height: 300px;
-    padding: 20px 70px;
+    padding: 20px 40px;
   }
 
   #hero h1{
@@ -1130,6 +1116,28 @@ footer {
   }
 
   /* product list starts here */
+
+  .box h2{
+    padding-top: 250px;
+    font-size: 30px;
+    line-height: 100px;
+    padding-left: 40px;
+  }
+  .game-row {
+    margin: 10px 40px;
+    gap: 50px;
+  }
+  
+  .game-item {
+    width: 150px;
+  }
+  
+  .game-item p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  
+  }
   
 
   /* Banner Starts Here */
@@ -1137,7 +1145,7 @@ footer {
   #banner {
     margin: 10px 38px;
     position: absolute;
-    top: 2120px;
+    top: 1800px;
   }
 
   #banner .ad {
@@ -1183,7 +1191,7 @@ footer {
   #catalog {
     margin: 10px 40px;
     position: absolute;
-    top: 2570px;
+    top: 2400px;
   }
 
   #catalog .te{
@@ -1431,7 +1439,6 @@ footer h5 {
     cursor: pointer;
   }
 
-  /* product list starts here */
   
   /* Banner Starts Here */
 
@@ -1776,7 +1783,7 @@ footer h5 {
 
   #hero{
     height: 150px;
-    padding: 10px 100px;
+    padding: 10px 50px;
     top: 100px;
   }
 
@@ -1794,7 +1801,7 @@ footer h5 {
   }
   
   #hero .startgaming{
-    width:100px;
+    width: 100px;
     height: 22px;
     font-size: 10px;
     letter-spacing: 0px;
@@ -1806,18 +1813,40 @@ footer h5 {
     height: 120px;
     position: absolute;
     top: 12px;
-    left: 340px;
+    left: 300px;
   }
 
 
   /* product list starts here */
+
+
+  .box h2{
+    padding-top: 200px;
+    font-size: 25px;
+    line-height: 50px;
+    padding-left: 40px;
+  }
+  .game-row {
+    margin: 10px 40px;
+    gap: 50px;
+  }
   
+  .game-item {
+    width: 120px;
+  }
+  
+  .game-item p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  
+  }
 
      /* Banner Starts Here */
 
    #banner {
     margin: 3px 90px;
-    top: 1200px;
+    top: 1400px;
   }
 
   #banner .ad {
@@ -1861,7 +1890,7 @@ footer h5 {
   #catalog {
     margin: 3px 180px;
     position: absolute;
-    top: 1450px;
+    top: 1650px;
   }
 
   #catalog .te{
@@ -1909,7 +1938,7 @@ footer h5 {
 /* NewsLetter Starts Here */
 
   #newsletter {
-   top: 1650px;
+   top: 1850px;
    padding-left: 30px;
    height: 100px;
    width: 100%;
@@ -1992,7 +2021,7 @@ footer {
 
   #hero{
     height: 150px;
-    padding: 10px 70px;
+    padding: 10px 40px;
   }
 
   #hero h1{
@@ -2026,12 +2055,45 @@ footer {
 
 
   /* product list starts here */
+
+  
+  .box h2{
+    padding-top: 100px;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+  .game-row {
+    margin: 10px 20px;
+    gap: 30px;
+  }
+  
+  .game-item {
+    width: 100px;
+  }
+  
+  .game-item p {
+    font-size: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  
+  }
+
+  .game-price {
+    font-size: 10px;
+    gap: 10px;
+  }  
+
+  .old-price {
+    font-size: 8px;
+    }
+  
   
      /* Banner Starts Here */
 
    #banner {
     margin: 3px 10px;
-    top: 1100px;
+    top: 1150px;
   }
 
   #banner .ad {
@@ -2075,7 +2137,7 @@ footer {
   #catalog {
     margin: 3px 100px;
     position: absolute;
-    top: 1350px;
+    top: 1400px;
   }
 
   #catalog .te{
@@ -2123,7 +2185,7 @@ footer {
 /* NewsLetter Starts Here */
 
   #newsletter {
-   top: 1550px;
+   top: 1600px;
    padding-left: 30px;
    height: 100px;
    width: 100%;
@@ -2383,6 +2445,37 @@ footer {
   }
 
   /* Product starts here */
+
+  .box h2{
+    padding-top: 110px;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+  .game-row {
+    margin: 10px 20px;
+    gap: 30px;
+  }
+  
+  .game-item {
+    width: 80px;
+  }
+  
+  .game-item p {
+    font-size: 9px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  
+  }
+
+  .game-price {
+    font-size: 9px;
+    gap: 10px;
+  }  
+
+  .old-price {
+    font-size: 6px;
+    }
 
  
    /* banner */
